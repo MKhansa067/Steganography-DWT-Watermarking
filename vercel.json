@@ -29,5 +29,4 @@
     }
   },
   "installCommand": "pip install -r requirements.txt",
-  "ignoreBuildCommand": "true"
 }

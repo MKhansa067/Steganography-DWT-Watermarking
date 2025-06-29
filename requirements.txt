@@ -1,5 +1,5 @@
 numpy
 opencv-python
 Pillow
-- name: Install PyInstaller
-  run: pip install pyinstaller
+name: Install PyInstaller
+run: pip install pyinstaller

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>DWT Watermarking Demo</title>
+</head>
+<body>
+  <h2>Embed Watermark</h2>
+  <form action="/embed" method="post" enctype="multipart/form-data">
+    Cover Image:     <input type="file" name="cover" accept="image/*"><br>
+    Watermark Image: <input type="file" name="watermark" accept="image/*"><br>
+    <button type="submit">Embed & Download Stego</button>
+  </form>
+
+  <h2>Extract Watermark</h2>
+  <form action="/extract" method="post" enctype="multipart/form-data">
+    Stego Image: <input type="file" name="stego" accept="image/*"><br>
+    <button type="submit">Extract & Download Watermark</button>
+  </form>
+</body>
+</html>

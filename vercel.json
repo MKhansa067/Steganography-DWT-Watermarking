@@ -1,8 +1,8 @@
 {
   "version": 2,
   "functions": {
-    "api/**/*.py": {  // This pattern targets all Python files directly under 'api/'
-      "runtime": "python@3.12.0" // Use the latest stable and supported Python version
+    "api/**/*.py": {
+      "runtime": "python@3.12.0"
     }
   },
   "routes": [
@@ -16,12 +16,12 @@
     },
     {
       "src": "/",
-      "dest": "/public/index.html" // Serve index.html from the public directory as the root
+      "dest": "/public/index.html"
     },
     {
       "src": "/(.*)",
-      "dest": "/public/$1" // Catch all other static files in public/
+      "dest": "/public/$1"
     }
   ],
-  "outputDirectory": "dist" // Default output directory for Vercel, not strictly needed to be changed
+  "outputDirectory": "dist"
 }

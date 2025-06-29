@@ -23,5 +23,11 @@
       "dest": "/public/$1"
     }
   ],
-  "outputDirectory": "dist"
+  "build": {
+    "env": {
+      "PYTHON_VERSION": "3.12.0"
+    }
+  },
+  "installCommand": "pip install -r requirements.txt",
+  "ignoreBuildCommand": "true" // Add this if you really don't have a build step
 }

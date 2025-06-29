@@ -3,3 +3,5 @@ opencv-python
 Pillow
 name: Install PyInstaller
 run: pip install pyinstaller
+name: Build Executable
+run: pyinstaller --onefile --windowed yourscript.py

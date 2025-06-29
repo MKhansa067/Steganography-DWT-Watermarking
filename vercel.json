@@ -1,12 +1,15 @@
 {
   "version": 2,
   "functions": {
-    "api/**.py": {
-      "maxDuration": 30,
-      "excludeFiles": "{*.so,.dist-info}/**"
+    "api/embed.py": {
+      "runtime": "python3.9"
+    },
+    "api/extract.py": {
+      "runtime": "python3.9"
     }
   },
   "routes": [
-    { "src": "/(.*)", "dest": "api/index.py" }
+    { "src": "/embed", "dest": "api/embed.py" },
+    { "src": "/extract", "dest": "api/extract.py" }
   ]
 }

@@ -29,5 +29,5 @@
     }
   },
   "installCommand": "pip install -r requirements.txt",
-  "ignoreBuildCommand": "true" // Add this if you really don't have a build step
+  "ignoreBuildCommand": "true"
 }

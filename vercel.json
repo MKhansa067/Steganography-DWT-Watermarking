@@ -1,15 +1,27 @@
 {
   "version": 2,
   "functions": {
-    "api/embed.py": {
-      "runtime": "python@3.12.0"
-    },
-    "api/extract.py": {
-      "runtime": "python@3.12.0"
+    "api/**/*.py": {  // This pattern targets all Python files directly under 'api/'
+      "runtime": "python@3.12.0" // Use the latest stable and supported Python version
     }
   },
   "routes": [
-    { "src": "/embed", "dest": "api/embed.py" },
-    { "src": "/extract", "dest": "api/extract.py" }
-  ]
+    {
+      "src": "/embed",
+      "dest": "api/embed.py"
+    },
+    {
+      "src": "/extract",
+      "dest": "api/extract.py"
+    },
+    {
+      "src": "/",
+      "dest": "/public/index.html" // Serve index.html from the public directory as the root
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/public/$1" // Catch all other static files in public/
+    }
+  ],
+  "outputDirectory": "dist" // Default output directory for Vercel, not strictly needed to be changed
 }

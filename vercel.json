@@ -2,10 +2,10 @@
   "version": 2,
   "functions": {
     "api/embed.py": {
-      "runtime": "python@3.9.0"
+      "runtime": "now-python@3.9.0"
     },
     "api/extract.py": {
-      "runtime": "python@3.9.0"
+      "runtime": "now-python@3.9.0"
     }
   },
   "routes": [

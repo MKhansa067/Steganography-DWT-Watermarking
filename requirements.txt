@@ -1,7 +1,5 @@
-numpy
+Flask
 opencv-python
+numpy
 Pillow
-name: Install PyInstaller
-run: pip install pyinstaller
-name: Build Executable
-run: pyinstaller --onefile --windowed yourscript.py
+pywavelets
